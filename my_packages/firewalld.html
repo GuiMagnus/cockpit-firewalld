@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Firewalld</title>
+		<meta charset="utf-8">
+		<link href="patternfly.css" type="text/css" rel="stylesheet">
+		<link href="cockpit.min.css" type="text/css" rel="stylesheet">
+		<link href="firewall.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="divPrincipal">
+			<div id="divText">
+				<textarea name="result" id="textResult" cols="160" rows="40" readonly="readonly"></textarea>
+			</div>
+			<div id="divLista">	
+				<ul>
+					<li>
+						<button type="button" id="startFirewall" >Iniciar Firewall</button>
+					</li>
+					<li>
+						<button type="button" id="stopFirewall">Parar Firewall</button>
+					</li>
+					<li>
+						<button type="button" id="statusFirewall">Status do Serviço</button>
+					</li>
+					<li>
+						<button type="button" id="serviceUdp">Habilitar do UDP</button>
+					</li>
+					<li>
+						<button type="button" id="serviceTcp">Habilitar do TCP</button>
+					</li>
+					<li>
+						<button type="button" id="serviceIcmp">Habilitar ICMP</button>
+					</li>
+					<li>
+						<button type="button">Permitir Mascaramento</button>
+						<ul>
+							<li>
+								<button type="button" id="inAceppt">Entrada</button>
+							</li>
+							<li>
+								<button type="button" id="outAceppt">Saida</button>
+							</li>
+							<li>
+								<button type="button" id="passAceppt">passagem</button>
+							</li>
+							<li>
+								<button type="button" id="preAceppt">Pre-Roteamento</button>
+							</li>
+							<li>
+								<button type="button" id="posAceppt">Pos-Roteamento</button>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<button type="button">Negar Mascaramento</button>
+						<ul>
+							<li>
+								<button type="button" id="inDeny">Entrada</button>
+							</li>
+							<li>
+								<button type="button" id="outDeny">Saida</button>
+							</li>
+							<li>
+								<button type="button" id="passDeny">passagem</button>
+							</li>
+							<li>
+								<button type="button" id="preDeny">Pre-Roteamento</button>
+							</li>
+							<li>
+								<button type="button" id="posDeny">Pos-Roteamento</button>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<button type="button">Ignorar Mascaramento</button>
+						<ul>
+							<li>
+								<button type="button" id="inIgnore">Entrada</button>
+							</li>
+							<li>
+								<button type="button" id="outIgnore">Saida</button>
+							</li>
+							<li>
+								<button type="button" id="passIgnore">passagem</button>
+							</li>
+							<li>
+								<button type="button" id="preIgnore">Pre-Roteamento</button>
+							</li>
+							<li>
+								<button type="button" id="posIgnore">Pos-Roteamento</button>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<button type="button" id="listPort">Listar Portas</button>
+						<ul id="ulPort">
+							<button type="button" id="addPort">Adicionar Porta</button>
+							<ul id="ul">
+								<li>
+									<input type="text" id="inputAddPort" placeholder="Informe o conteúdo e clique">
+								</li>
+							</ul>
+							<button type="button" id="removePort">Remover Porta</button>
+							<ul id="ul">
+								<input type="text" id="inputRemovePort" placeholder="Informe o conteúdo e clique">
+							</ul>
+							<button type="button" id="listPort">Listar Portas</button>
+						</ul>
+					</li>
+					<li>
+						<button type="button" id="listInterface">Listar Interfaces</button>
+					</li>
+					<li>
+						<button type="button" id="listRule">Listar Regras </button>
+					</li>
+					<li>
+						<button type="button" id="insertRule">Inserir Regra</button>
+						<ul id="ul">
+							<input type="text" id="inputInsertRule" placeholder="Informe o conteúdo e clique">
+						</ul>
+					</li>
+					<li>
+						<button type="button" id="insertRulePosition" placeholder="Informe o conteúdo e clique">Inserir Regra na Posição</button>
+						<ul id="ul">
+							<input type="text" id="inputInsertRulePosition">
+						</ul>
+					</li>
+					<li>
+						<button type="button" id="deleteRule"placeholder="Informe o conteúdo">Deletar Regra</button>
+						<ul id="ul">
+							<input type="text" id="inputDeleteRule">
+						</ul>
+					</li>
+					<li>
+						<button type="button" id="permitTraffic">Permitir Tráfego</button>
+					</li>
+					<li>
+						<button type="button" id="negateTraffic">Negar Tráfego</button>
+					</li>
+					<li>
+						<button type="button" id="listCommands">Listar últimas Intruções</button>
+					</li>
+					<li>
+						<button type="button" id="log">Exibir Log</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="jquery.min.js" ></script>
+		<script src="mustache.min.js" ></script>
+		<script src="cockpit.min.js" ></script>
+		<script src="firewalld.js" ></script>
+	</body>
+</html>

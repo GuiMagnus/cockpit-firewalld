@@ -1,0 +1,113 @@
+ul{
+	list-style-type:none;
+	margin: 0;
+	padding:0;
+	width:25%;
+	background-color:#f1f1f1;
+	height:100%;
+	position:fixed;
+	overflow:auto;
+}
+
+li button {
+	display:block;
+	color:#000;
+	padding:8px 40px;
+	text-decoration:none;
+	width:100%;
+}
+li button:hover {
+	background-color:#555;
+	color: white;
+}
+
+ul{
+	border:1px solid #555;
+}
+
+li{
+	text-align:center;
+	border-bottom:1px solid #555;
+}
+li ul {
+	display:none;
+}
+li:hover ul {
+	display: inline-block;
+	height:36%;
+
+}
+
+#divText{
+	float: right;
+	position: relative;
+	width:70%;
+	height:auto;
+	position: relative;
+}
+
+
+#textResult{
+	border:1px solid;
+	background-color : black;
+	max-width: 100%;
+	height:auto;
+	color:white;
+	float:right;
+	position:relative;
+	margin-left: 1.5%;
+}
+#divLista{
+	float:left;
+	width:28%;
+	height:auto;
+	position: relative;
+}
+
+#log{
+	margin-bottom: 20%;
+}
+
+#ulInputListRule{
+	height: 50px;
+	width: 270px;
+	margin-left: 120px;
+}
+
+#inputInsertRule{
+	margin: 2.5%;
+}
+
+#inputAddPort{
+	margin: 2.5%;
+}
+
+#inputRemovePort{
+	margin: 2.5%;
+}
+
+#ulDeleteRule{
+	height: 50px;
+	width: 270px;
+	margin-left: 120px;
+}
+
+#inputDeleteRule{
+	margin: 2.5%;
+}
+
+#ul{
+	height: 50px;
+	width: 270px;
+	margin-left: 120px;
+}
+
+#inputInsertRulePosition{
+	margin: 2.5%;
+}
+
+#ulPort{
+	height: 145px;
+	width: 270px;
+	margin-left: 120px;
+}
