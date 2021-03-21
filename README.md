@@ -12,3 +12,7 @@ Para instalar o pacote cockpit-selinux, será necessário:
 2º Acesse o diretório onde o pacote rpm se encontra.
 
 3º Execute para instalar. rpm -ihv my_packages-1.0-0.noarch.rpm
+
+Instruções de uso:
+
+Comandos onde é possível adicionar regras,portas ou afins, é necessário digitar a regra/porta no input e clicar no botão para se obter o resultado na Área de Texto ao lado
